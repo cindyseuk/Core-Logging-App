@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <?!=include("projects-css");?>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper green darken-4">
+          <a href="<?= ScriptApp.getService().getUrl(); ?>" class="brand-logo ">Maptek</a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="badges.html"><i class="material-icons right">view_module</i></a></li>
+            </ul>
+        </div>
+      </nav>
+    </header> 
+      <div class="row">
+        <div class="col s2">
+          <ul class="sidenav sidenav-fixed side-nav grey lighten-2">
+            <li ><a href="<?= ScriptApp.getService().getUrl();?>">Home</a></li>
+            <li><a href="<?= ScriptApp.getService().getUrl(); ?>?v=projects"> Projects</a></li>
+          <ul>
+        </div>
+        <div class="container">
+      <div class="row">
+        <form class="col s10">
+          <div class="row">
+            <h3>
+              Create a new project
+            </h3>
+          </div>
+
+
+          <div class="row">
+            <div class="input-field col s4">
+              <input type="text" class="validate">
+              <label>Project Name</label>
+            </div>
+            <div class="input-field col s4">
+              <input type="text" class="validate">
+              <label>Site Location</label>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div> -->
+          <!-- <div class="row">
+            <div class="input-field col s6">
+              <input id="add" type="text" class="validate">
+              <label for="add">Address</label>
+            </div>
+          </div> -->
+          <div>
+            <a href="<?= ScriptApp.getService().getUrl(); ?>?v=" class="btn green darken-4">
+              Create a new template</a>
+             <a href="<?= ScriptApp.getService().getUrl(); ?>?v=" class="btn green darken-4">
+              Create a with existing template</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+      </div>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
+</html>

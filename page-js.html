@@ -1,0 +1,18 @@
+<script>
+ // document.getElementById("btn").addEventListener("click", run);
+ // document.getElementById("project").addEventListener("click", loadProject);
+
+  function run(){
+    var userInfo={};
+    userInfo.firstName=document.getElementById("fn").value;
+    userInfo.lastName=document.getElementById("ln").value;
+    userInfo.email=document.getElementById("email").value;
+
+    google.script.run.userClicked(userInfo);
+    
+    document.getElementById("fn").value="";
+    document.getElementById("ln").value="";
+    document.getElementById("email").value="";
+  }
+
+</script>
