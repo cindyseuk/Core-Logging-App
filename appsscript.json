@@ -1,10 +1,62 @@
 {
-  "timeZone": "Australia/Adelaide",
+  "timeZone": "America/New_York",
   "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [
+      {
+        "menuName": "colour",
+        "functionName": "colour"
+      },
+      {
+        "menuName": "valid",
+        "functionName": "valid"
+      },
+      {
+        "menuName": "dropdown",
+        "functionName": "dropdown"
+      },
+      {
+        "menuName": "texture",
+        "functionName": "texture"
+      },
+      {
+        "menuName": "t",
+        "functionName": "t"
+      },
+      {
+        "menuName": "f",
+        "functionName": "f"
+      },
+      {
+        "menuName": "Untitled Macro",
+        "functionName": "UntitledMacro"
+      },
+      {
+        "menuName": "hide_rows",
+        "functionName": "hide_rows"
+      },
+      {
+        "menuName": "protec",
+        "functionName": "protec"
+      },
+      {
+        "menuName": "dsj",
+        "functionName": "dsj"
+      },
+      {
+        "menuName": "hhh",
+        "functionName": "hhh"
+      },
+      {
+        "menuName": "copy",
+        "functionName": "copy"
+      }
+    ]
+  },
   "webapp": {
     "executeAs": "USER_DEPLOYING",
     "access": "ANYONE_ANONYMOUS"
-  },
-  "exceptionLogging": "STACKDRIVER",
-  "runtimeVersion": "V8"
+  }
 }
